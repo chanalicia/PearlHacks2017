@@ -8,6 +8,12 @@
     <artifactId>PearlHacks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
+       <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-1.0-sdk</artifactId>
+            <version>${appengine.target.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>com.ibm.watson.developer_cloud</groupId>
             <artifactId>alchemy</artifactId>
@@ -20,14 +26,6 @@
         </dependency>
     </dependencies>
          
-        <build>
-    <plugins>
-        <plugin>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-maven-plugin</artifactId>
-            <version>1.9.9</version>
-        </plugin>
-    </plugins>
-</build>
+
 
 </project>
